@@ -42,7 +42,7 @@ requirements.txt
 1. Create and activate a virtual environment:
 
 ```bash
-python -m venv .venv
+python3 -m venv .venv
 source .venv/bin/activate
 ```
 
@@ -72,25 +72,25 @@ BINANCE_API_SECRET=your_testnet_api_secret
 Market order dry-run:
 
 ```bash
-python -m backend.bot.cli place BTCUSDT BUY MARKET 0.001 --dry-run
+python3 -m backend.bot.cli place BTCUSDT BUY MARKET 0.001 --dry-run
 ```
 
 Limit order dry-run:
 
 ```bash
-python -m backend.bot.cli place ETHUSDT SELL LIMIT 0.01 --price 3500 --dry-run
+python3 -m backend.bot.cli place ETHUSDT SELL LIMIT 0.01 --price 3500 --dry-run
 ```
 
 Bonus stop-limit order dry-run:
 
 ```bash
-python -m backend.bot.cli place BTCUSDT SELL STOP_LIMIT 0.001 --price 67000 --stop-price 67500 --dry-run
+python3 -m backend.bot.cli place BTCUSDT SELL STOP_LIMIT 0.001 --price 67000 --stop-price 67500 --dry-run
 ```
 
 Prompt-based CLI wizard:
 
 ```bash
-python -m backend.bot.cli wizard
+python3 -m backend.bot.cli wizard
 ```
 
 Remove `--dry-run` only when your `.env` contains valid Binance Futures Testnet credentials.
