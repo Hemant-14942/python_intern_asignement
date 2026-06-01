@@ -40,6 +40,8 @@ requirements.txt
 
 ## Backend setup
 
+Requires Python 3.10 or newer.
+
 1. Create and activate a virtual environment:
 
 ```bash
