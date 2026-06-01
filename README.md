@@ -5,6 +5,7 @@ Full-stack submission for the Python Developer Intern assignment. The project in
 - a reusable Python trading bot package,
 - a FastAPI backend,
 - a Typer CLI,
+- Binance Futures integration through the `python-binance` library,
 - structured JSON logging,
 - market, limit, and bonus stop-limit order support,
 - sample market/limit logs,
@@ -21,7 +22,7 @@ https://testnet.binancefuture.com
 ```text
 backend/
   bot/
-    client.py          # Signed Binance Futures REST client
+    client.py          # python-binance Futures Testnet client wrapper
     orders.py          # Order placement logic
     validators.py      # Input validation helpers
     logging_config.py  # Structured log setup
