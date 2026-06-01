@@ -3,18 +3,18 @@
 from __future__ import annotations
 
 from decimal import Decimal
-from enum import StrEnum
+from enum import Enum
 from typing import Any
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 
-class OrderSide(StrEnum):
+class OrderSide(str, Enum):
     BUY = "BUY"
     SELL = "SELL"
 
 
-class OrderType(StrEnum):
+class OrderType(str, Enum):
     MARKET = "MARKET"
     LIMIT = "LIMIT"
     STOP_LIMIT = "STOP_LIMIT"

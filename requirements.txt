@@ -2,8 +2,10 @@ fastapi
 httpx
 pydantic
 pydantic-settings
+python-binance
 pytest
 pytest-asyncio
+requests
 rich
-typer[all]
+typer
 uvicorn[standard]
