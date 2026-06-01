@@ -1,0 +1,9 @@
+fastapi
+httpx
+pydantic
+pydantic-settings
+pytest
+pytest-asyncio
+rich
+typer[all]
+uvicorn[standard]
